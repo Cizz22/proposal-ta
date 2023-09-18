@@ -14,9 +14,18 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: main.tex
+      
+      - name: Rename document
+        run: mv main.pdf proposal-ta.pdf
 
-      - name: Move and rename document
-        run: mkdir pages && mv main.pdf pages/proposal-ta.pdf
+      - name: Move document
+        run: mkdir pages && mv proposal-ta.pdf pages/proposal-ta.pdf
+
+      - name: Upload document as an artifact
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: document
+          path: proposal-ta.pdf
 
       - name: Deploy document to GitHub pages
         uses: JamesIves/github-pages-deploy-action@v4.4.3
