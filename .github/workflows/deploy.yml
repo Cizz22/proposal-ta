@@ -25,7 +25,7 @@ jobs:
         uses: actions/upload-artifact@v3.1.2
         with:
           name: document
-          path: proposal-ta.pdf
+          path: pages/proposal-ta.pdf
 
       - name: Deploy document to GitHub pages
         uses: JamesIves/github-pages-deploy-action@v4.4.3
