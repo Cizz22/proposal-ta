@@ -1,49 +1,58 @@
 \chapter{PENDAHULUAN}
 
 \section{Latar Belakang}
+Dashboard kinerja adalah salah satu alat teknologi yang dapat membantu memberikan informasi bagi manajemen rumah sakit untuk melakukan pengambilan keputusan. Dengan kemajuan teknologi informasi dalam industri kesehatan, penggunaan dashboard kinerja telah menjadi semakin penting. Berdasarkan penelitian milik Luigi Jesus Basile, pemanfaatan dashboard kinerja dan \emph{Business Intelligence} (BI) dalam pengambilan keputusan dapat mengungguli praktik berbasis pengalaman dalam mengelola proses di sektor kesehatan \parencite{Basile2023}. Selain itu, laporan yang dikeluarkan oleh Capital link terkait \emph{Performance Benchmarking Toolkit for Health Centers} menjelaskan bahwa penerapan alat analis data membantu pemimpin dalam melacak kinerja secara lebih efektif dan efisien, memahami faktor utama yang memengaruhi, serta menggabungkan pemahaman tentang operasional untuk menjadikan pusat kesehatan lebih berkelanjutan secara finansial dan mencapai kesuksesan yang berkelanjutan \parencite{CapitalLink2017}. Implementasi dashboard kinerja menjadi lebih mendesak dalam berbagai situasi kesehatan yang memerlukan pemantauan real-time dan analisis data untuk membantu manajemen rumah sakit merespons dengan lebih cepat dan tepat.
 
-% Paragraf pertama
-Dashboard kinerja adalah salah satu alat teknologi yang dapat membantu memberikan informasi bagi manajemen rumah sakit untuk
-melakukan pengambilan keputusan. Dengan kemajuan teknologi informasi dalam industri kesehatan, penggunaan dashboard kinerja telah menjadi semakin penting.
-Berdasarkan penelitian milik Luigi Jesus Basile, pemanfaatan dashboard kinerja dan \emph{Business Intelligence}(BI) dalam pengambilan keputusan dapat mengungguli praktik berbasis pengalaman 
-dalam mengelola proses di sektor kesehatan \parencite{Basile2023}. Selain itu, laporan yang dikeluarkan oleh Capital link terkait \emph{Performance Benchmarking Toolkit for Health Centers} 
-menjelaskan bahwa penerapan alat analis data membantu pemimpin dalam melacak kinerja secara lebih efektif dan efisien, 
-memahami faktor utama yang memengaruhi, serta menggabungkan pemahaman tentang operasional untuk menjadikan 
-pusat kesehatan lebih berkelanjutan secara finansial dan mencapai kesuksesan yang berkelanjutan \parencite{CapitalLink2017}. 
-Implementasi dashboard kinerja menjadi lebih mendesak dalam berbagai situasi kesehatan yang memerlukan pemantauan 
-real-time dan analisis data untuk membantu rumah sakit merespons dengan lebih cepat dan tepat.
 
-% Paragraf kedua
-Berdasarkan wawancara dengan narasumber dari Rumah Sakit Bhayangkara, didapatkan bahwa saat ini setiap cabang rumah sakit masih memiliki 
-sistem informasi yang terpisah-pisah dan dijalankan secara lokal. Hal ini menyebabkan basis data dari setiap cabang rumah sakit belum terintegrasi dengan basis data sentral. 
-Basis data sentral tersebut diharapkan terhubung dengan dashboard kinerja rumah sakit guna memantau kinerja baik keseluruhan cabang ataupun satu-persatu.
-Ketidaktersediaan integrasi data tersebut menjadi hambatan dalam membangun dashboard kinerja.
+Dalam penerapan dashboard kinerja di lingkungan rumah sakit, pengumpulan dan integrasi data menjadi komponen kunci. Integrasi data adalah proses menggabungkan data dari berbagai sumber yang berbeda menjadi satu kesatuan yang terintegrasi \parencite{Neang2021DataIA}. Data yang diperlukan untuk menghasilkan wawasan yang komprehensif dan bermakna dalam operasional rumah sakit bersumber dari berbagai proses bisnis yang terjadi di lingkungan rumah sakit. Data tersebut termasuk data pasien yang mencakup data pendaftaran atau data rawat inap;informasi dokter yang melibatkan jadwal praktek;persediaan obat-obatan yang mencakup inventaris obat dan alas medis;serta berbagai elemen lainnya seperti administrasi, keuangan, dan manajemen sumber daya manusia.
 
-%paragraf ketiga
-Upaya yang telah dilakukan untuk mengintegrasiakan data adalah dengan melakukan migrasi data secara manual. 
-(Perlu wawancara lebih kepada pihak rumah sakit bhayangkara untuk menjelaskan lebih dalam terkait proses 
-migrasi data secara manual)
 
-%paragraf keempat
-Upaya yang telah diberikan tersebut masih menimbulkan masalah, yaitu tenaga dan waktu yang diperlukan untuk melakukan migrasi data secara manual sangat besar. 
-Sebagaimana yang telah dijelaskan oleh penelitian yang dilakukan oleh \textcite{Elamparithi2015}, migrasi 
-sistem dapat menjadi tugas yang memakan waktu dan sangat mahal; oleh karena itu, organisasi perlu 
-menyederhanakan proses migrasi dan menjadikannya semaksimal mungkin dalam hal efisiensi 
-biaya. Selain itu ancaman kebocoran data juga menjadi masalah yang sering terjadi dalam proses migrasi data secara manual.
-Data dari Ponemon Institute dalam laporan \emph{Cost of a Data Breach Report 2023 } mengungkapkan bahwa biaya kebocoran data di sektor 
-kesehatan dapat mencapai rata-rata \$11 juta \parencite{Ponemon2023}. Hal ini menggarisbawahi pentingnya menjaga keamanan data pasien selama proses migrasi data, 
-yang dapat menjadi sangat kompleks dan rentan terhadap serangan siber.
+Berdasarkan data yang dihimpun oleh Pusat Kedokteran dan Kesehatan (Pusdokkes) polri, saat ini terdapat 57 cabang rumah sakit polri yang tersebar di berbagai daerah \parencite{Aziz2023OptimalisasiPD}. Setiap cabang rumah sakit melakukan proses bisnis yang sama, yaitu melayani masyarakat dalam hal kesehatan. Dengan kegiatan layanan kesehatan yang dilakukan setiap hari, tentunya jumlah data untuk setiap cabang rumah sakit akan terus bertambah. Proses integrasi data menjadi semakin penting dalam konteks ini, karena akan memungkinkan manajemen pusat rumah sakit polri untuk melakukan analisis kualitas pelayanan kesehatan baik pada setiap cabang ataupun keseluruhan cabang dengan lebih efisien.
 
-%paragraf kelima
-Dari permasalahan yang telah diuraikan di atas, diperlukan suatu sistem yang dapat mengintegrasikan basis data dari setiap cabang rumah sakit ke basis data sentral
-yang terhubung dengan dashboard kinerja. Pengembangan sistem integrasi data yang canggih dan aman diharapkan dapat membantu rumah sakit seperti Rumah Sakit Bhayangkara dalam 
-pengembangan dashboard kinerja guna meningkatkan efisiensi operasional dan meningkatkan pelayanan kesehatan bagi pasien. 
+
+Namun, meskipun pentingnya pengumpulan dan integrasi data ini sangat jelas, kenyataannya mengungkapkan tantangan serius. Berdasarkan wawancara dengan salah satu developer dari simkes Khanza, saat ini setiap cabang rumah sakit masih mengoprasikan sistem infomasi yang terpisah-pisah dan dijalankan secara lokal. Dampak dari hal ini adalah basis data dari setiap cabang rumah sakit belum terintegrasi dengan basis data sentral. Basis data sentral tersebut diharapkan terhubung dengan dashboard kinerja guna memantau kinerja baik keseluruhan cabang ataupun satu-persatu. Ketidaktersediaan integrasi data tersebut menjadi hambatan signifikan dalam upaya membangun dan mengimplementasikan dashboard kinerja yang efektif. Untuk mengatasi hambatan ini, perlu ditemukan solusi yang memungkinkan pengumpulan dan integrasi data dari berbagai cabang rumah sakit, sehingga dashboard kinerja dapat memberikan manfaat maksimal dalam mengingkatkan kualitas dan efisiensi layanan kesehatan.\parencite{Basile2023}
+
+Beberapa upaya mengenai integrasi data sudah pernah dilakukan oleh \textcite{Firdaus2022MEMBANGUNID} berupa implementasi desain ETL (Extract-Transform-Load) yang dapat mengolah data dari berbagai sumber dengan menggunakan Microsoft SSIS (SQL Server Integration Service) untuk merancang aliran data dari sumber ke basis data tujuan. Meskipun upaya ini memiliki manfaat signifikan dalam menyatukan data dari berbagai sumber, terdapat kelemahan yang perlu diperhatikan. Salah satu kelemahan yang terjadi pada penelitian ini adalah penggunaan perangkat lunak pihak ketiga yang membatasi pengguna harus menggunakan basis data tertentu sebagai basis data tujuan. Penggunaan alat tertentu dapat menghambat proses integrasi disebabkan tidak kompatibelnya alat tersebut dengan infrastruktur rumah sakit.
+
+
+Penelitian lain terkait integrasi data telah dilakukan oleh \textcite{Herfandi_Julkarnain_Hanif_2022}, yang mengimplementasikan RESTful Application Programming Interface (API) sebagai penghubung antara dua aplikasi pencatatan data untuk mencapai integrasi. Penelitian ini memiliki pendekatan yang berbeda, di mana tidak ada perpindahan data yang terjadi, melainkan hanya penggabungan akses pada dua basis data dalam satu aplikasi. Salah satu kelemahan yang dapat diidentifikasi pada penelitian ini adalah ketergantungan pada sumber data yang sudah harus tersedia di \emph{cloud} agar dapat diakses melalui internet. Hal ini menjadi masalah karena dalam konteks sistem informasi rumah sakit, banyak rumah sakit masih menerapkan sistem secara lokal karena kekhawatiran akan aspek keamanan data. 
+
+Upaya yang telah diuraikan berdasarkan penelitian-penelitian sebelumnya masih belum mampu untuk menjadi solusi terhadap permasalahan integritas data pada sistem informasi rumah sakit. Terlebih lagi proses migrasi data menjadi lebih rumit disebabkan heterogenitas data pada sistem informasi rumah sakit. Sebagaimana yang telah dijelaskan oleh penelitian yang dilakukan oleh \textcite{Elamparithi2015}, migrasi data dapat menjadi tugas yang memakan waktu dan sangat mahal berbanding lurus dengan kekompleksan data; oleh karena itu, organisasi perlu menyederhanakan proses migrasi dan menjadikannya semaksimal mungkin dalam hal efisiensi biaya. Selain itu ancaman kebocoran data juga menjadi hal yang perlu diperhatikan selama proses migrasi data. Data dari Ponemon Institute dalam laporan \emph{Cost of a Data Breach Report 2023} mengungkapkan bahwa biaya kebocoran data di sektor kesehatan dapat mencapai rata-rata \$11 juta \parencite{Ponemon2023}. Hal ini menggarisbawahi pentingnya menjaga keamanan data selama proses migrasi data, yang dapat menjadi sangat kompleks dan rentan terhadap serangan siber.
+
+
+Dari permasalahan yang telah diuraikan di atas, diperlukan suatu perangkat lunak yang dapat mengintegrasikan basis data dari setiap cabang rumah sakit ke basis data sentral
+yang terhubung dengan dashboard kinerja dengan mempertimbangkan kekompleksan data pada sistem informasi rumah sakit. Perangkat lunak tersebut fokus pada perpindahan data pada basis data lokal sistem informasi rumah sakit dan juga meminimalkan risiko keamanan data yang dapat terjadi ketika proses perpindahan data. Selain itu perangkat lunak juga mempunyai fleksibitas dalam hal menerima data dari berbagai sumber basis data dan juga memindahkan data ke basis data sentral yang telah ditentukan.
+
+\clearpage
 
 \section{Rumusan Masalah}
+Berdasarkan hal yang telah dipaparkan di latar belakang, maka dapat dirumuskan masalah sebagai berikut:
+\begin{enumerate}
+    \item bagaimana merancang dan membangun perangkat lunak integrasi data yang efektif untuk mengintegrasikan data dari setiap cabang rumah sakit ke basis data sentral?
+    \item bagaimana merancang dan membangun perangkat lunak integrasi data yang meminimalkan risiko keamanan data selama proses integrasi?
+    \item bagaimana merancang dan membangun perangkat lunak integrasi data yang memiliki fleksibilitas dalam menerima data dari berbagai sumber basis data dan memindahkan data ke basis data sentral yang telah ditentukan?
+\end{enumerate}
 
 \section{Batasan Masalah atau Ruang Lingkup}
+Berdasarkan latar belakang dan rumusan masalah, maka dapat dirumuskan batasan masalah sebagai berikut:
+\begin{enumerate}
+    \item perangkat lunak integrasi data hanya dapat mengintegrasikan data dari sumber sistem basis data SQl seperti MySQL, PostgreSQL dan MSSQL;
+    \item perangkat lunak integrasi data hanya dijalankan pada perangkat yang memiliki sistem operasi Windows; dan
+    \item perangkat lunak integrasi data hanya dapat dijalankan menggunakan jaringan yang terhubung dengan server yang menyimpan basis data sistem informasi rumah sakit.
+\end{enumerate}
 
 \section{Tujuan}
+Berdasarkan rumusan masalah dan batasan masalah, maka dapat dirumuskan tujuan sebagai berikut:
+\begin{enumerate}
+    \item merancang dan membangun perangkat lunak integrasi data yang efektif untuk mengintegrasikan data dari setiap cabang rumah sakit ke basis data sentral;
+    \item merancang dan membangun perangkat lunak integrasi data yang meminimalkan risiko keamanan data selama proses integrasi; dan
+    \item merancang dan membangun perangkat lunak integrasi data yang memiliki fleksibilitas dalam menerima data dari berbagai sumber basis data dan memindahkan data ke basis data sentral yang telah ditentukan.
+\end{enumerate}
 
 \section{Manfaat}
+Berikut adalah manfaat yang diharapkan dari Tugas Akhir yang dilakukan:
+\begin{enumerate}
+    \item Memberikan kontribusi bagi rumah sakit Bhayangkara dalam meningkatkan efisiensi operasional dan meningkatkan pelayanan kesehatan bagi pasien.
+    \item Memberikan kontribusi bagi peneliti selanjutnya dalam melakukan penelitian terkait sistem integrasi data.
+\end{enumerate}
 

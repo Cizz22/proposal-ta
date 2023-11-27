@@ -2,26 +2,101 @@
 
 % Ubah konten-konten berikut sesuai dengan isi dari tinjauan pustaka
 \section{Hasil penelitian/perancangan terdahulu}
-\lipsum[3]
+Proposal Tugas Akhir ini disusun berdasarkan beberapa hasil penelitian terdahulu dengan perincian sebagai berikut:
+\renewcommand\tabularxcolumn[1]{m{#1}}
+\begin{table}[ht]
+  \caption{Table penelitian perangkat lunak integrasi data pada fasilitas kesehatan}
+  \label{tab:penelitian-terdahulu}
+  \centering
+  \begin{tabularx}{\textwidth}{|p{3.5cm}|X|}
+    \hline
+    \textbf{Judul Penelitian} & A data integration platform for patient-centered e-healthcare and clinical decision support \\
+    \hline
+    \textbf{Peneliti dan Tahun terbit} & Jayaratne, Madhura;Nallaperuma, Dinithi;De Silva, Daswin;Alahakoon, Damminda;Devitt, Brian;Webster, Kate E.;Chilamkurti, Naveen.2019. \\
+    \hline
+    \textbf{Rangkuman Penelitian} & Artikel ini menjelaskan solusi teknis untuk penyampaian layanan kesehatan berkualitas tinggi dengan mengusulkan sebuah platform untuk mengintegrasikan data dan informasi mengenai hubungan yang terjalin antara profesional kesehatan, pasien, dan pengasuh mereka. Sistem yang diusulkan bertujuan untuk memberikan perawatan yang disesuaikan dengan individu bagi para pasien dengan mematuhi teori IS yang diusulkan. Sistem ini mengatasi masalah-masalah seperti heterogenitas data dan integrasi data berbasis pasien. Artikel ini menyimpulkan bahwa platform yang diusulkan dapat dianggap sebagai langkah besar menuju pencapaian perawatan berbasis pasien (PCC) di berbagai praktik medis, baik yang kecil maupun besar.\\
+    \hline
+    \textbf{Keterkaitan Penelitian} & Pada penelitian ini dijelaskan terkait kompleksitas data pada layanan kesehatan. Kompleksitas data terdapat heterogenitas data pasien yang berbeda dari berbagai segi. Ketekaitan dengan penelitian ini adalah pertama kesamaan studi kasus yang dipilih yaitu integritas data pada layanan kesehatan dan juga permasalahan terkait komplesitas data akibat heterogenitas data. \\
+    \hline
+  \end{tabularx}
+\end{table}
+
+\clearpage
+
+\begin{table}[ht]
+  \caption{Table penelitian perangkat lunak integrasi data dengan metode ETL}
+  \label{tab:penelitian-terdahulu-2}
+  \centering
+  \begin{tabularx}{\textwidth}{|p{3.5cm}|X|}
+    \hline
+    \textbf{Judul Penelitian} & Pengembangan Dashboard Cerdas Untuk Monitoring Data Pasien Rawat Rumah Sakit Umum Daerah Praya Kabupaten Lombok Tengah \\
+    \hline
+    \textbf{Peneliti dan Tahun terbit} & Mutawalli; Lalu; Zaen; Asri; Bagye, Wire.2021. \\
+    \hline
+    \textbf{Rangkuman Penelitian} & Artikel ini membahas pengembangan data warehouse dan dashboard untuk mengintegrasikan data antara dua Hospital Information System (SIM RS) di RSUD Praya. Dashboard ini bertujuan untuk membantu rumah sakit dalam mengeluarkan informasi dari dataset, seperti analisis metode pembayaran, jenis penyakit, dan membandingkan jumlah pasien dengan gender yang berbeda, dari data inpatient. Dashboard ini juga digunakan untuk menentukan distribusi dan asal seorang pasien. Pengujian sistem dilakukan melalui pengujian langsung pengguna, hasilnya menunjukkan skor dashboard sistem sebesar 86\%, mencakup kualitas sistem pada 86\%, kualitas informasi pada 88\%, dan kualitas layanan pada 85\%. Kesimpulan dari penelitian ini menunjukkan bahwa sistem cukup mendukung kinerja pemangku kepentingan di rumah sakit publik regional di Praya.\\
+    \hline
+    \textbf{Keterkaitan Penelitian} & Pada penelitian ini digunakan metode ETL dalam proses integrasi data antara dua rumah sakit. Walaupun proses ETL dilakukan dengan menggunakan aplikasi pihak ketiga, namun proses yang dijelaskan cukup untuk memberikan referensi terhadap penelitian ini \\
+    \hline
+  \end{tabularx}
+\end{table}
+
+\clearpage
 
 \section{Teori/Konsep Dasar}
 
-\subsection{Hukum Newton}
+\subsection{Integrasi Data}
+Integrasi data adalah proses menggabungkan data dari berbagai sumber menjadi tampilan yang terpadu \parencite{Neang2021DataIA}. Dalam konteks rumah sakit, data dari berbagai sumber seperti catatan medis, informasi pasien, pengelolaan inventaris, keuangan, dan departemen lainnya perlu disatukan secara holistik \parencite*{Oliva2018}. Proses integrasi data ini penting karena memungkinkan penyedia layanan kesehatan dan staf administratif mengakses informasi yang konsisten dan terintegrasi, memfasilitasi pengambilan keputusan yang lebih cepat dan akurat \parencite{Basile2023}. Dalam Penerapan integrasi data, terdapat beberapa penelitian yang menggunakan berbagai metode yang berbeda. Penelitian oleh \textcite{Baharuddin2022IMPLEMENTASIWS} menerapkan metode RESTful Web Services sebagai alat integrasi data. Dengan metode tersebut memungkinkan aplikasi untuk mengakses data dari database lain melalui API. Sedangkan penelitian oleh \textcite{Firdaus2022MEMBANGUNID} menerapkan metode ETL dalam proses integrasi data. Metode Restful API memiliki keunggulan dalam kecepatan mengakses data namun pada akhirnya data yang diakses tersebut tidak dipindahkan ke database baru namun hanya diakses saja, sedangkan metode ETL melibatkan perpindahan data yang menyebabkan proses menjadi lebih rumit dan memerlukan banyak waktu dan tenaga. Adapun tantangan dalam integrasi data melibatkan beberapa aspek krusial antara lain,
+\begin{enumerate}
+  \item Kesulitan dalam menggabungkan data dari berbagai sumber yang berbeda.
+  \item Memastikan keakuratan dan konsistensi data yang diintegrasikan.
+  \item Menangani kompleksitas teknis dan keamanan dalam mengintegrasikan data dari berbagai platform.
+\end{enumerate}
 
-% Contoh penggunaan referensi dari pustaka
-% Contoh penggunaan referensi dari persamaan
-Kemudian menjadi persamaan seperti pada persamaan \ref{eq:FirstLaw}.
 
-% Contoh pembuatan persamaan
-\begin{equation}
-  % Label referensi dari persamaan yang dibuat
-  \label{eq:FirstLaw}
-  % Baris kode persamaan yang dibuat
-  \sum \mathbf{F} = 0\; \Leftrightarrow\; \frac{\mathrm{d} \mathbf{v} }{\mathrm{d}t} = 0.
-\end{equation}
+\subsection{Heterogeneous Data dalam Konteks Sistem Informasi Rumah Sakit}
+Dalam konteks sistem informasi rumah sakit, heterogenitas data merujuk pada berbagai jenis dan sumber data serta format data yang digunakan pada sistem informasi rumah sakit. Heterogeneitas data tersebut mencakup data klinis dari berbagai departemen, seperti rekam medis pasien, informasi keuangan, dan data operasional yang berasal dari berbagai sumber, seperti sistem informasi manajemen rumah sakit (HIS), sistem informasi akuntansi, dan sistem informasi human resources \parencite{Amelia2021}. Aspek data klinis melibatkan detail-detail kompleks dari riwayat pasien, rencana perawatan, dan prosedur medis, sementara data keuangan berkaitan dengan catatan tagihan, klaim asuransi, dan informasi anggaran yang penting untuk mengelola operasi keuangan rumah sakit. Sementara itu, data operasional mencakup hal-hal seperti jadwal staf, alokasi sumber daya, dan manajemen inventaris, masing-masing berasal dari sistem-sistem terpisah yang melayani fungsionalitas khusus dalam rumah sakit \parencite{mutawalli2021pengembangan}.
 
-\lipsum[9]
+\subsection{Metode ETL}
+ETL merupakan singkatan dari Extract, Transform, Load, dan merupakan metode yang digunakan dalam data warehousing untuk mengumpulkan data dari berbagai sumber dan mengintegrasikannya menjadi satu data tunggal \parencite{Fana2021DataWD}. Proses ETL melibatkan tiga langkah utama \parencite{Peng2023}, yaitu:
+\begin{enumerate}
+  \item Ekstrak: Pada langkah ini, data diekstrak dari berbagai sumber, seperti basis data, berkas datar, atau layanan web.
+  \item Transformasi: Data yang diekstrak kemudian diubah menjadi format yang dapat digunakan oleh gudang data. Ini mungkin melibatkan pembersihan data, penghapusan duplikat, atau konversi tipe data.
+  \item Muat: Akhirnya, data yang telah diubah dimuat ke dalam basis data tujuan, di mana data tersebut dapat dianalisis dan digunakan untuk pelaporan serta pengambilan keputusan.
+\end{enumerate}
 
-\subsection{Anti Gravitasi}
+ETL adalah proses penting dalam data warehousing, karena memastikan bahwa data di dalam gudang data akurat, konsisten, dan terkini. Terdapat faktor kunci yang memastikan kesuksesan proses ETL. Menurut \textcite{Ahmad2022THESF}, faktor-faktor utama yang berkontribusi pada kesuksesan proses ETL (Extract, Transform, Load) mencakup aspek kualitas sistem dan kualitas data. Faktor kualitas sistem menitikberatkan pada efisiensi dan kehandalan dari proses integrasi data, termasuk dalam hal kecepatan pemrosesan data, tingkat akurasi, dan konsistensi yang dijaga. Di sisi lain, faktor kualitas data mengacu pada kualitas dari data yang diintegrasikan, termasuk kelengkapan data, akurasi informasi, dan relevansi data dalam konteks integrasi tersebut. Kedua aspek ini memegang peran penting dalam memastikan kesuksesan dan kinerja yang optimal dari proses ETL.
 
-\lipsum[10]
+\subsection{SQLite}
+SQLite adalah sebuah c-languange library  yang mengimplementasikan sistem basis data SQL yang ringan dan cepat \parencite{sqlite-intro}. SQLite pada umumnya digunakan pada aplikasi dekstop atau embedded systems sebagai penyimpanan utama aplikasi. Dengan menggunakan SQLite, pengembang tidak perlu menginstall server atau melakukan konfigurasi sebelum menggunakan basis data ini. Adapun keunggulan dari basis data SQLite sebagai berikut \parencite{sqlite-advantage}.
+\begin{enumerate}
+  \item Mudah digunakan dan sederhana: SQLite mudah digunakan dan memerlukan minimal konfigurasi, sehingga cocok untuk aplikasi kecil dan sistem terintegrasi
+  \item Self-contained: SQLite adalah database manajemen basa yang tidak memerlukan server dan dapat beroperasi tanpa dukungan jaringan. Ini membuatnya ideal untuk aplikasi yang membutuhkan operasi transaksi dan konsistensi tinggi.
+  \item Kompatibilitas cross-platform: SQLite telah diportasi ke berbagai platform, termasuk Windows, macOS, dan iOS, membuatnya menjadi pilihan yang berversatil untuk aplikasi multi-platform
+  \item Mendukung berbagai tipe data: SQLite mendukung full-text indexing dan JSON data, memungkinkan menyimpan dan mengolah data dalam berbagai format
+\end{enumerate} 
+
+\subsection{Electron JS}
+Electron JS adalah kerangka kerja \emph{open-source} untuk membangun aplikasi desktop berbasis platform menggunakan teknologi web seperti HTML, CSS, dan Javascript \parencite{ElectronJS}. Dengan menggunakan Electron, pengembang dapat menciptakan aplikasi yang bekerja di berbagai platform, seperti macOS, Windows, dan Linux, dengan mengelola satu kode sumber JavaScript.
+
+Keuntungan menggunakan Electron JS adalah pengembang dapat menggunakan teknologi web yang sudah dikuasai untuk membuat aplikasi desktop yang dapat berjalan di berbagai platform seperti Windows, macOS, dan Linux. Selain itu, Electron JS juga menyediakan akses ke API sistem operasi yang memungkinkan pengembang untuk mengakses fitur-fitur seperti notifikasi, sistem file, dan jaringan. Namun, karena aplikasi yang dibangun dengan Electron JS menggunakan teknologi web, aplikasi tersebut cenderung lebih berat dan memakan lebih banyak sumber daya dibandingkan dengan aplikasi desktop native \parencite{electonjs-alain}.
+
+\subsection{Apache Beam}
+Apache Beam merupakan suatu model pemrograman yang berfungsi untuk menentukan dan menjalankan serangkaian proses pemrosesan data, termasuk ETL (Ekstraksi, Transformasi, dan Pemuatan) pada batch dan stream processing \parencite{apacheoverview}. Dengan menggunakan SDK yang disediakan oleh Apache Beam, pengembang dapat mendefinisikan Beam Pipeline dan kemudian melakukan eksekusi pada runner (processing backend) yang didukung oleh Apache Beam seperti Apache Apex, Apache Flink, Apache Samza, Apache Spark, dan Google Cloud Dataflow \parencite{apacheoverview}.
+
+Saat melakukan proses ETL, Apache Beam mempunyai konsep dasar seperti \emph{Pipeline} dan \emph{PCollection} yang merupakan kumpulan data yang akan diolah oleh Apache Beam. Selain itu, Apache Beam juga menawarkan kemampuan \emph{windowing} untuk membagi \emph{PCollection} berdasarkan waktu dari masing-masing elemennya, dan transformasi yang menggabungkan sejumlah elemen seperti GroupByKey. Apache Beam menggunakan \emph{trigger} untuk menetapkan waktu kapan hasil dari penggabungan akan dihasilkan untuk digunakan oleh langkah transformasi selanjutnya. Berdasarkan sumber \textcite{apache-advantage} Apache Beam memiliki beberapa keunggulan sebagai berikut.
+\begin{enumerate}
+  \item abstraksi yang kuat untuk memproses data pada batch dan streaming,
+  \item menyediakan SDK yang dapat digunakan pada bahasa pemrograman,
+  \item dapat membaca data dari berbagai sumber yang didukung, seperti Mysql, PostgreSQL, dll,
+\end{enumerate}
+
+
+
+
+% % Contoh pembuatan persamaan
+% \begin{equation}
+%   % Label referensi dari persamaan yang dibuat
+%   \label{eq:FirstLaw}
+%   % Baris kode persamaan yang dibuat
+%   \sum \mathbf{F} = 0\; \Leftrightarrow\; \frac{\mathrm{d} \mathbf{v} }{\mathrm{d}t} = 0.
+% \end{equation}

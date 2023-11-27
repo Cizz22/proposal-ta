@@ -10,14 +10,17 @@
 % Pengaturan caption untuk tabel
 \usepackage{caption}
 
+% Remove colon from figure caption
+\DeclareCaptionLabelSeparator{mysep}{\space}
+\captionsetup{labelsep=mysep}
+
 % Judul dokumen
 \title{Proposal Tugas Akhir ITS}
 \author{Cisatra, Aulia}
-\def\tatitle{RANCANG BANGUN PERANGKAT LUNAK INTEGRASI DATA PADA SISTEM INFORMASI RUMAH SAKIT DENGAN MENGGUNAKAN METODE ELT (EXTRACT, LOAD, TRANSFORM)}
+\def\tatitle{RANCANG BANGUN PERANGKAT LUNAK INTEGRASI DATA PADA SISTEM INFORMASI RUMAH SAKIT}
 
 % Pengaturan detail pada file PDF
 \usepackage[pdfauthor={\@author},bookmarksnumbered,pdfborder={0 0 0}]{hyperref}
-
 
 % Pengaturan ukuran indentasi
 \setlength{\parindent}{2em}
@@ -106,6 +109,13 @@
   and = {dan}
 }
 
+% Remove hyphenation
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+
 % Isi keseluruhan dokumen
 \begin{document}
   % Nomor halaman pembuka dimulai dari sini
@@ -162,10 +172,6 @@
 
   % Konten metodologi
   \input{konten/3-metodologi.tex}
-  \cleardoublepage
-
-  % Konten lainnya
-  \input{konten/4-lainnya.tex}
   \cleardoublepage
 
   % Daftar pustaka
